@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Iron Oak Tavern</title>
+
+<style>
+body{
+background:#111;
+color:white;
+font-family:Arial,sans-serif;
+margin:0;
+padding:40px 20px;
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+}
+
+h1{
+text-align:center;
+color:#d4af37;
+font-size:4rem;
+margin-bottom:50px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+margin-top:40px;
+}
+
+.center{
+text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Gallery</h1>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200" alt="Bar Interior">
+
+<img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200" alt="Cocktails">
+
+<img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200" alt="Food">
+
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200" alt="Live Music">
+
+<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200" alt="Outdoor Patio">
+
+<img src="https://images.unsplash.com/photo-1563379091339-03246963d29a?w=1200" alt="Beer Taps">
+
+</div>
+
+<div class="center">
+<a href="index.html" class="btn">← Back Home</a>
+</div>
+
+</div>
+
+</body>
+</html>
