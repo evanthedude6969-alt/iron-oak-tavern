@@ -7,7 +7,40 @@
 <title>Iron Oak Tavern</title>
 
 <style>
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+z-index:1000;
+}
 
+.logo{
+font-size:1.3rem;
+font-weight:bold;
+color:#d4af37;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#d4af37;
+}
 *{
 margin:0;
 padding:0;
@@ -105,7 +138,18 @@ text-align:center;
 </head>
 
 <body>
+<nav class="navbar">
+    <div class="logo">Iron Oak Tavern</div>
 
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="hours.html">Hours</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
 <section class="hero">
 
 <div class="hero-content">
